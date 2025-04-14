@@ -11,3 +11,19 @@ classDiagram
   }
   Animal <|-- Dog
 ```
+
+# Employee ER Diagram
+
+```mermaid
+erDiagram
+    EMPLOYEE ||--o{ DEPARTMENT : works_in
+    EMPLOYEE {
+        int id PK
+        string name
+        int department_id FK
+    }
+    DEPARTMENT {
+        int id PK
+        string name
+    }
+```
